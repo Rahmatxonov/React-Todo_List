@@ -28,7 +28,7 @@ const DisplayTodos = (props) => {
   const [sort, setSort] = useState("active");
   return (
     <div className="displaytodos">
-      <div className="buttons">
+      {/* <div className="buttons">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -50,7 +50,7 @@ const DisplayTodos = (props) => {
         >
           All
         </motion.button>
-      </div>
+      </div> */}
       <ul>
         <AnimatePresence>
           {props.todos.length > 0 && sort === "active"
